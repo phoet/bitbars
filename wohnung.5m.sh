@@ -1,3 +1,3 @@
 #!/bin/sh
 
-$HOME/.rbenv/versions/2.4/bin/ruby /Users/peterschroder/Dropbox/bitbar/.wohnung.rb
+$HOME/.rbenv/versions/2.4.0/bin/ruby $HOME/Dropbox/bitbar/.wohnung.rb

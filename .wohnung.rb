@@ -3,7 +3,7 @@ require 'mechanize'
 
 RESULT_URL = 'https://www.immobilienscout24.de/Suche/S-T/Wohnung-Kauf/Umkreissuche/Hamburg/20357/-2192/2621329/-/-/4/-/80,00-/EURO--500000,00/-/-/-/-/-/true/true/-/-/-/-/-2015/true?enteredFrom=result_list'
 ENTRY_URL = 'https://www.immobilienscout24.de/expose/'
-LAST_ID_PATH = '/Users/peterschroder/Dropbox/bitbar/.last_id'
+LAST_ID_PATH = "#{ENV['HOME']}/Dropbox/bitbar/.last_id"
 
 agent = Mechanize.new
 page = agent.get(RESULT_URL)
