@@ -20,6 +20,11 @@ class Flat
 
   def print
     results = fetch_results
+    if results.empty?
+      puts "⛺️"
+      return
+    end
+
     last_id = results.map { |entry| entry['id'].to_i }.max
     if File.exist? LAST_ID_PATH
       current_id = File.read(LAST_ID_PATH).to_i
